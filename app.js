@@ -2,7 +2,7 @@ const path = require('path');
 
 const express = require('express');
 
-const authRoutes = requite('./routes/auth.routes');
+const authRoutes = require('./routes/auth.routes');
 
 const app = express();
 // Tell express to use ejs to render views and where to find my views

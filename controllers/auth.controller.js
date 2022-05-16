@@ -1,6 +1,6 @@
 const User = require('../models/user.model');
 
-function getSignUp(req, res) {
+function getSignup(req, res) {
   res.render('customer/auth/signup');
 }
 
@@ -19,13 +19,13 @@ async function signup(req, res) {
   res.redirect('/login');
 }
 
-function getLogIn(req, res) {
+function getLogin(req, res) {
   res.render('customer/auth/login')
 }
 
 module.exports = {
-  getSignUp: getSignUp,
-  getLogIn: getLogIn,
+  getSignup: getSignup,
+  getLogin: getLogin,
   signup: signup
 };
 
